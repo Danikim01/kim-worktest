@@ -1,0 +1,87 @@
+.show-card {
+  display: block;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e0e0e0;
+}
+
+.show-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.show-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.show-artist {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  flex: 1;
+}
+
+.show-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.show-status-activo {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.show-status-confirmado {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.show-status-cancelado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.show-card-body {
+  margin-bottom: 1rem;
+}
+
+.show-card-body p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.show-card-body strong {
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+.show-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.show-capacity {
+  font-weight: 500;
+}
+

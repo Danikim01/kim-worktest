@@ -1,0 +1,178 @@
+.purchases-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.purchases-page h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.no-purchases {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.no-purchases p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.btn-browse-events {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-browse-events:hover {
+  background-color: #0056b3;
+}
+
+.purchases-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.purchase-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.purchase-header h3 {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.purchase-venue {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.purchase-status {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.purchase-status-confirmado {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.purchase-status-pendiente {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.purchase-status-cancelado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.purchase-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.purchase-info p {
+  margin: 0.75rem 0;
+  color: #666;
+}
+
+.purchase-info strong {
+  color: #333;
+  margin-right: 0.5rem;
+}
+
+.purchase-qr {
+  text-align: center;
+}
+
+.purchase-qr h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.qr-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.qr-image {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.qr-note {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
+}
+
+.error-message {
+  background-color: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  border: 1px solid #fcc;
+}
+
+.btn-retry {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn-retry:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .purchase-details {
+    grid-template-columns: 1fr;
+  }
+
+  .purchase-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+

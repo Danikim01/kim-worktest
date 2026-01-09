@@ -1,0 +1,141 @@
+.confirmation-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.confirmation-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.confirmation-header h1 {
+  margin: 0 0 0.5rem 0;
+  color: #28a745;
+  font-size: 2.5rem;
+}
+
+.confirmation-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.purchases-list {
+  margin-bottom: 2rem;
+}
+
+.purchase-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.purchase-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.purchase-info p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.purchase-info strong {
+  color: #333;
+}
+
+.qr-code-section {
+  text-align: center;
+}
+
+.qr-code-section h4 {
+  margin-top: 0;
+  color: #333;
+}
+
+.qr-code-container {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.qr-code-image {
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+.qr-note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-view-purchases,
+.btn-back-home {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+}
+
+.btn-view-purchases {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-view-purchases:hover {
+  background-color: #0056b3;
+}
+
+.btn-back-home {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-back-home:hover {
+  background-color: #5a6268;
+}
+
+@media (max-width: 768px) {
+  .purchase-card {
+    grid-template-columns: 1fr;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
+
+  .btn-view-purchases,
+  .btn-back-home {
+    width: 100%;
+  }
+}
+

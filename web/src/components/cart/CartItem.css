@@ -1,0 +1,141 @@
+.cart-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.cart-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cart-item-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.btn-remove {
+  background: #dc3545;
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.btn-remove:hover {
+  background: #c82333;
+}
+
+.cart-item-venue {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.cart-item-tickets {
+  margin-bottom: 1rem;
+}
+
+.ticket-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.ticket-row:last-child {
+  border-bottom: none;
+}
+
+.ticket-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ticket-type-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.ticket-unit-price {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.ticket-quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.ticket-quantity-controls button {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.ticket-quantity-controls button:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.ticket-quantity-controls .quantity {
+  min-width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.ticket-subtotal {
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+}
+
+.cart-item-total {
+  padding-top: 1rem;
+  border-top: 2px solid #e0e0e0;
+  text-align: right;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .ticket-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .ticket-subtotal {
+    text-align: left;
+  }
+
+  .cart-item-total {
+    text-align: left;
+  }
+}
+
